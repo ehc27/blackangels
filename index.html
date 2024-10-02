@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="main.js"></script>
 </head>
 <body>
     <div class="tela_geral">
@@ -16,15 +17,15 @@
 
             <div class="div_username">
                     <img class="user" src="user.png">
-                    <input class="input" placeholder="USERNAME" type="text">
+                    <input id="email" class="input" placeholder="EMAIL" type="text">
             </div>
 
             <div class="div_lock">
                             <img class="lock" src="lock.png">
-                            <input class="input" placeholder="PASSWORD" type="text">
+                            <input id="password" class="input" placeholder="PASSWORD" type="text">
             </div>
 
-            <button class="button"> LOGIN </button>
+            <button onclick="verificar()" class="button"> LOGIN </button>
             <div class="div_texto">
                 <p class="forgot_password">Forgot password?</p>
             </div>
