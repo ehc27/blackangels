@@ -41,7 +41,7 @@ function validarEmail() {
         console.log(resultadoEmail)
     }
     else{
-        alert("email invalido!")
+        alert("email inválido!")
     }
 }
 function login() {
