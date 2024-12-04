@@ -181,6 +181,13 @@
     left: 300px !important;
     top: 10px !important;
   }
-  .swiper-button-next{
-    top: 300px !important;
+  .swiper-button-next {
+    bottom: -40px !important;
+  }
+  
+  .swiper-button-prev {
+    bottom: -40px !important;
+  }
+  .swiper-container {
+    position: relative;
   }
