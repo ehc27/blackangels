@@ -42,7 +42,10 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search">
+              <button type="button" onclick="window.location.href = './carrinho.html'" class="botaoCarrinho">
+                <img class="imgCarrinho" src="./carrinho.png">
+              </button>
+              <input class="form-control me-2 caixaBuscar" type="search" placeholder="buscar" aria-label="Search">
               <button class="btn btn-outline-danger" type="submit">Selecionar</button>
             </form>
           </div>
@@ -61,53 +64,68 @@
         </div>
       </section>
       <section id="colecoes">
-        <h1 class="produtos">ℙ𝕣𝕠𝕕𝕦𝕥𝕠𝕤</h1>
+        <h1 class="produtos">ℙ𝕣𝕠𝕕𝕦𝕥𝕠𝕤 1</h1>
         <p class="pProdutos">𝐒𝐞𝐣𝐚 𝐨 𝐝𝐞𝐬𝐭𝐚𝐪𝐮𝐞</p>
         <hr class="linha1">
-        <div class="swiper-container">
-          <div onclick="adicionarCarrinho()" class="swiper-wrapper">
-            <!-- Slides adicionados dinamicamente pelo script -->
-          </div>
-      
-          <!-- Botões de navegação -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <!-- Paginação -->
-          <div class="swiper-pagination"></div>
-        </div>
-      </section> 
-      <section id="colecoes">
-        <h1 class="produtos">ℙ𝕣𝕠𝕕𝕦𝕥𝕠𝕤</h1>
-        <p class="pProdutos">𝐒𝐞𝐣𝐚 𝐨 𝐝𝐞𝐬𝐭𝐚𝐪𝐮𝐞</p>
-        <hr class="linha1">
-        <div class="swiper-container">
+        <div class="swiper-container swiper1">
           <div class="swiper-wrapper">
-            <!-- Slides adicionados dinamicamente pelo script -->
+            <div class="swiper-slide"><img src="produto1.jpg" alt="Produto 1"></div>
+            <div class="swiper-slide"><img src="produto2.jpg" alt="Produto 2"></div>
+            <div class="swiper-slide"><img src="produto3.jpg" alt="Produto 3"></div>
           </div>
-      
-          <!-- Botões de navegação -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <!-- Paginação -->
           <div class="swiper-pagination"></div>
-        </div>
-      </section> 
-      <section id="colecoes">
-        <h1 class="produtos">ℙ𝕣𝕠𝕕𝕦𝕥𝕠𝕤</h1>
+        </div>
+    
+        <h1 class="produtos">ℙ𝕣𝕠𝕕𝕦𝕥𝕠𝕤 2</h1>
         <p class="pProdutos">𝐒𝐞𝐣𝐚 𝐨 𝐝𝐞𝐬𝐭𝐚𝐪𝐮𝐞</p>
         <hr class="linha1">
-        <div class="swiper-container">
+        <div class="swiper-container swiper2">
           <div class="swiper-wrapper">
-            <!-- Slides adicionados dinamicamente pelo script -->
+            <div class="swiper-slide"><img src="produto4.jpg" alt="Produto 4"></div>
+            <div class="swiper-slide"><img src="produto5.jpg" alt="Produto 5"></div>
+            <div class="swiper-slide"><img src="produto6.jpg" alt="Produto 6"></div>
           </div>
-      
-          <!-- Botões de navegação -->
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <!-- Paginação -->
           <div class="swiper-pagination"></div>
-        </div>
-      </section> 
+        </div>
+    
+        <h1 class="produtos">ℙ𝕣𝕠𝕕𝕦𝕥𝕠𝕤 3</h1>
+        <p class="pProdutos">𝐒𝐞𝐣𝐚 𝐨 𝐝𝐞𝐬𝐭𝐚𝐪𝐮𝐞</p>
+        <hr class="linha1">
+        <div class="swiper-container swiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="produto7.jpg" alt="Produto 7"></div>
+            <div class="swiper-slide"><img src="produto8.jpg" alt="Produto 8"></div>
+            <div class="swiper-slide"><img src="produto9.jpg" alt="Produto 9"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </section> 
+<!-- Modal para exibir detalhes do produto -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Detalhes do Produto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalProductImage" src="" class="img-fluid" alt="Imagem do Produto">
+        <h3 id="modalProductName" class="mt-3"></h3>
+        <p id="modalProductPrice"></p>
+      </div>
+      <div class="modal-footer">
+        <button id="addToCart" class="btn btn-primary">Adicionar ao Carrinho</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
       <script src="./main.js"></script>     
 </body>
 </html>

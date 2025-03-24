@@ -191,3 +191,25 @@
   .swiper-container {
     position: relative;
   }
+  .botaoCarrinho {
+    width: 36px;
+    height: 36px;
+    border-color: transparent;
+    background-color: transparent;
+    z-index: 1000;
+  }
+  .imgCarrinho {
+    width: 25px;
+    height: 25px;
+  }
+  .imgCarrinho:hover {
+    width: 30px;
+    height: 30px;
+  }
+  .botaoCarrinho:hover {
+        width: 40px !important;
+        height: 40px !important;
+      }
+.caixaBuscar {
+    z-index: 1000;
+}
