@@ -5,17 +5,29 @@ function carregarCarrinho() {
     var cartItens = document.getElementById("cartItens");
     cartItens.innerHTML = "";
 
+    var quantidadeItens = document.getElementById("quantidadeItens");
+    quantidadeItens.textContent = carrinho.length
+
+    var cartTotal = document.getElementById("cartTotal");
+
     var total = 0;
 
-    carrinho.forEach((item) => {
-        total += parseFloat(item.preco.replace("R$", "").replace(",", "."));
-
+    carrinho.forEach((item, index) => {
         var li = document.createElement("li");
-        li.innerHTML = `${item.nome} - ${item.preco}`;
+        li.className = "list-group-item d-flex justify-content-between align-items-center";
+        li.innerHTML = `${item.nome} - ${item.preco} <button onclick = "deletItem(${index})">Apagar</button>`;
         cartItens.appendChild(li);
     });
-
+    var precoNumero = parseFloat(item.preco.replace("R$", "").replace(",", "."));
+    total += precoNumero
     document.getElementById("cartTotal").innerText = `Total: R$ ${total.toFixed(2)};`
 }
 
 carregarCarrinho();
+
+function deletItem(index) {
+    carrinho = JSON.parse(localStorage.getItem("carrinho"))||[]
+    carrinho.splice(index, 1)
+    localStorage.setItem("carrinho", JSON.stringify(carrinho))
+    carregarCarrinho()
+}
