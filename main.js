@@ -61,20 +61,19 @@ function login() {
 // Dados fictícios para produtos com novas imagens de notebooks
 
 const produtos = [
-    { nome: "Camisa Preta Lisa BA", preco: "R$ 79,99", img: "./camisa preta.png" },
-    { nome: "Camisa Branca Lisa BA", preco: "R$ 79,99", img: "./camisa branca.png" },
-    { nome: "Camisa Vermelha Lisa BA", preco: "R$ 79,99", img: "./camisa vermelha.png" },
-    { nome: "Notebook HP Pavilion", preco: "R$ 6.199", img: "https://images.pexels.com/photos/12128117/pexels-photo-12128117.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Lenovo Ideapad", preco: "R$ 5.499", img: "https://images.pexels.com/photos/769732/pexels-photo-769732.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Gamer MSI", preco: "R$ 8.799", img: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Samsung Galaxy Book", preco: "R$ 4.799", img: "https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Acer Aspire 5", preco: "R$ 3.699", img: "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Dell Inspiron", preco: "R$ 4.488", img: "https://images.pexels.com/photos/411183/pexels-photo-411183.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Asus VivoBook", preco: "R$ 5.999", img: "https://images.pexels.com/photos/3560567/pexels-photo-3560567.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook HP Pavilion", preco: "R$ 6.199", img: "https://images.pexels.com/photos/12128117/pexels-photo-12128117.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Lenovo Ideapad", preco: "R$ 5.499", img: "https://images.pexels.com/photos/769732/pexels-photo-769732.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Gamer MSI", preco: "R$ 8.799", img: "https://images.pexels.com/photos/1201996/pexels-photo-1201996.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
-    { nome: "Notebook Samsung Galaxy Book", preco: "R$ 4.799", img: "https://images.pexels.com/photos/757889/pexels-photo-757889.jpeg?auto=compress&cs=tinysrgb&w=300&h=200" },
+    { nome: "Camisa Preta Lisa BA", preco: "R$ 109,90", img: "./camisa preta.png" },
+    { nome: "Camisa Branca Lisa BA", preco: "R$ 109,90", img: "./camisa branca.png" },
+    { nome: "Camisa Vermelha Lisa BA", preco: "R$ 109,90", img: "./camisa vermelha.png" },
+    { nome: "Moletom Vermelho BA", preco: "R$ 149,90", img: "./moletom_vermelho.webp" },
+    { nome: "Moletom Preto BA", preco: "R$ 149,90", img: "./moletom-liso-preto.webp" },
+    { nome: "Tênis Preto BA", preco: "R$ 199,90", img: "tenis preto.jpg" },
+    { nome: "Tênis Branco BA", preco: "R$ 199,90", img: "tenis-branco.jpg" },
+    { nome: "Bermuda Preta BA", preco: "R$ 69,90", img: "bermuda-preta.jpg" },
+    { nome: "Bermuda Branca BA", preco: "R$ 69,90", img: "bermuda-branca.webp" },
+    { nome: "Calça Baggy Jeans Clara BA", preco: "R$ 179,90", img: "baggy-jeans-clara.webp" },
+    { nome: "Calça Baggy Jeans Preto BA", preco: "R$ 179,90", img: "baggy-jeans-preto.webp" },
+    { nome: "Boné Preto BA", preco: "R$ 79,90", img: "bone-preto.webp" },
+    { nome: "Boné Vermelho BA", preco: "R$ 79,90", img: "bone-vermelho.png" },
   ];
 
 const swiperWrapper = document.querySelector('.swiper-wrapper');
