@@ -7,9 +7,45 @@
 .esquerda{
     width: 70%;
     height: 100%;
+    font-family: "Montserrat", sans-serif;
 }
 .direita{
     width: 30%;
     background-color: rgb(130, 0, 0);
     height: 100%;
+}
+.itensTitulo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+.voltar{
+    width: 30px;
+
+}
+.card{
+    background-color: rgb(72, 72, 72);
+    height: 150px;
+    width: 500px;
+    box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.363) !important;
+    border-radius: 10px;
+    gap: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.list-Group{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.apagar{
+    background: none;
+    background-image: url("./bin.png") !important;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    border:none;
 }

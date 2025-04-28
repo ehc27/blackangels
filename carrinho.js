@@ -14,8 +14,8 @@ function carregarCarrinho() {
 
     carrinho.forEach((item, index) => {
         var li = document.createElement("li");
-        li.className = "list-group-item d-flex justify-content-between align-items-center";
-        li.innerHTML = `${item.nome} - ${item.preco} <button onclick = "deletItem(${index})">Apagar</button>`;
+        li.className = "card list-group-item d-flex justify-content-between align-items-center";
+        li.innerHTML = `${item.nome} - ${item.preco} <button class="apagar" onclick = "deletItem(${index})"></button>`;
         cartItens.appendChild(li);
     });
     var precoNumero = parseFloat(item.preco.replace("R$", "").replace(",", "."));
