@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de pagamento</title>
+    <title>Carrinho</title>
     <link rel="stylesheet" href="carrinho.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,33 @@
             </div>
         </div>
         <div class="direita">
-            
+            <h1 class="tituloPagamento">Pagamento</h1>
+            <div class="titulo">
+                <a onclick="mostrarFormulario()"><img class="pix" src="./pix.png"></a>
+                <a onclick="mostrarFormulario()"><img class="visa" src="./visa.jpeg"></a>
+                <a onclick="mostrarFormulario()"><img class="mastercard" src="./mastercard.webp"></a>
+                <a onclick="mostrarFormulario()"><img class="boleto" src="./boleto.jpg"></a>
+            </div>
+                <div class="formulario" id="formulario">
+                    <div class="itensFormulario">
+                        <h3>Nome completo</h3>
+                        <input class="input" type="text" placeholder="Primeiro nome">
+                        <input class="input" type="text" placeholder="Sobrenome">
+                    </div>
+                    <div class="itensFormulario">
+                        <h3>Data de nascimento</h3>
+                        <input class="input" type="date">
+                    </div>
+                    <div class="itensFormulario">
+                        <h3>CPF</h3>
+                        <input class="input" type="number">
+                        <h3>CEP</h3>
+                        <input class="input" type="number">
+                    </div>
+                    <div class="irAoPagamento">
+                        <button class="botaoPagamento">Ir ao pagamento</button>
+                    </div>
+                </div>
         </div>
     </section>
     <script src="carrinho.js"></script>

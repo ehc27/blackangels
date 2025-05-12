@@ -31,3 +31,13 @@ function deletItem(index) {
     localStorage.setItem("carrinho", JSON.stringify(carrinho))
     carregarCarrinho()
 }
+
+function mostrarFormulario() {
+    var formulario = document.getElementById("formulario")
+    if (formulario.style.display === "none") { //visivel//
+        formulario.style.display = "block" //invisivel//
+    }
+    else {
+        formulario.style.display = "none"
+    }
+}
